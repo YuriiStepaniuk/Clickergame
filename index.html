@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <select name="Choose the difficulty" id="diff">
+        <option value="" selected disabled>Choose the difficulty</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+        <option value="Extreme">Extreme</option>
+      </select>
+      <div style="display: flex">
+        <label for="durationInput">Game Duration(sec):</label
+        ><input type="text" id="durationInput" placeholder="Insert duration" />
+      </div>
+      <br />
+
+      <div class="game"><button id="startBtn">Start Game</button></div>
+      <span>Score: <span class="score">0</span></span>
+      <span>Time: <span class="time-left">10</span></span>
+      <table>
+        <tr>
+          <td>Games played: <span class="games-played">0</span></td>
+          <td>Best score: <span class="score-best">0</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
